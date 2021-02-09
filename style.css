@@ -57,9 +57,9 @@ h1, h2, h3, h4, h5, h6, strong{
 background-color: var(--secondaryColor);
 border:1px solid var(--borderColor);
 border-radius: 5px 5px 0 0 ;
--webkit-box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
-box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 49px -8px 73px -39px rgba(0,0,0,0.75);
+-moz-box-shadow: 49px -8px 73px -39px rgba(0,0,0,0.75);
+box-shadow: 49px -8px 73px -39px rgba(0,0,0,0.75);
 display : grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 3em 30em;
