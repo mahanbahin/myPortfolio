@@ -15,11 +15,12 @@ html, body {
 h1, h2, h3, h4, h5, h6, strong{
  color: var(--mainText);
  font-family: 'Amatic SC', cursive;
+ font-weight: 500;
 }
  p, li, span, label, input, textarea{
 
     color: var(--secondaryText);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Roboto', sans-serif;
  }
  a{
      text-decoration: none;
@@ -45,6 +46,74 @@ h1, h2, h3, h4, h5, h6, strong{
     background-color : var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
     overflow : auto;
+}
+.greeting{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 10em;
+}
+.intro-wrapper{
+background-color: var(--secondaryColor);
+border:1px solid var(--borderColor);
+border-radius: 5px 5px 0 0 ;
+-webkit-box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
+box-shadow: 49px -8px 73px 0px rgba(0,0,0,0.75);
+display : grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 3em 30em;
+grid-template-areas: 
+    'nav-wrapper nav-wrapper'
+    'left-column right-column'
+    ;
+}
+.nav-wrapper{
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
+}
+.dosts-wrapper{
+    display: flex;
+    padding: 10px;
+}
+#dot-1{
+    background-color: #FC6058;
+}
+#dot-2{
+    background-color: #FEC02F;
+}
+#dot-3{
+    background-color: #2ACA3E;
+}
+.nav-dots{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -maz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75) ;
+}
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+#navigation li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.left-column{
+    grid-area:left-column;
+}
+.right-column{
+    grid-area:right-column;
 }
 .main-container{
     width:1200px;
